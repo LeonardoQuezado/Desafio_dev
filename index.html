@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--remix icon-->
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+<!--Css-->
+<link rel="stylesheet" href="assets\css\css.css">
+
+    <title>Desafio Vortex</title>
+</head>
+<body>
+
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Treino de basquete</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="main">
+
+        <section class="home" id="home">
+            <img src="assets\img\images.jpg" alt="" class="home__img">
+
+            <div class="home__container container grid">
+                <div class="home__data">
+
+                    Informe T:<input id="numero1" type="number" class="input input--flex"> <br />
+                    Informe Q:<input id="numero2" type="number" class="input input--flex"> <br />
+                    Informe X: <input id="numero3" type="number" class="input input--flex" > <br />
+                    <button onclick="maior()" class="button button--flex">Calcular </button>
+
+</div>
+
+<script type="text/javascript">
+
+    function maior(){
+
+
+    var nt = 0
+    var nc = parseFloat(document.getElementById("numero2").value);
+    var n1 = parseFloat(document.getElementById("numero1").value);
+    var n2 = parseFloat(document.getElementById("numero2").value);
+    var n3 = parseFloat(document.getElementById("numero3").value);
+
+
+    
+for(i = 1 ; i<= n1 ; i++){
+
+if(n2 == 2){
+if(nc != n2 - 1){
+	nc = nc -1
+}
+nt = nt + nc
+}
+
+if(n2 == 3){
+if(nc != n2 - 2){
+    nc = nc -1
+}
+nt = nt + nc
+}
+
+if(n2 >= 4){
+if(nc != n2 - 3){
+    nc = nc -1
+}
+nt = nt + nc
+}
+}
+
+    alert("Valor: "+ nt);
+    }
+</script>
+
+<div class="home__social">
+    <a href="https://www.facebook.com/leonardo.quezado/" target="_blank" class="home__social-link">
+        <i class="ri-facebook-circle-fill"></i>
+    </a>
+
+    <a href="https://www.instagram.com/leonardoquezado/" target="_blank" class="home__social-link">
+        <i class="ri-instagram-fill"></i>
+    </a>
+
+    <a href="https://www.linkedin.com/in/loliprivatier/" target="_blank" class="home__social-link">
+        <i class="ri-store-fill"></i>
+    </a>
+
+    <a href="https://github.com/LoliPrivatier" target="_blank" class="home__social-link">
+        <i class="ri-github-fill"></i>
+    </a>
+</div>
+</main>
+
+</body>
+
+</html>
